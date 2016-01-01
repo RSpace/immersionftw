@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Immersion For The Win</title></head>
+
+  <body>
+    <div id="giphy"></div>
+    <a href="https://medium.com/immersion-for-the-win">For now, there's just a blog</a>
+
+    <script type="text/javascript">
+      // Kids: Don't do this at home! (Only old men are allowed to write javascript this crude)
+      var request = new XMLHttpRequest();
+      request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=virtual+reality', true);
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          var response = JSON.parse(request.responseText);
+          console.log(response);
+          document.getElementById('giphy').innerHTML = '<img src="' + response.data.fixed_height_downsampled_url + '" width="' + response.data.fixed_height_downsampled_width + '" height="' + response.data.fixed_height_downsampled_height + '">';
+        }
+      };
+      request.send();
+    </script>
+  </body>
+</html>
