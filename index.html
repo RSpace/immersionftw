@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Immersion For The Win</title></head>
+  <head><title>Immersion FTW</title></head>
+
+  <!-- <link rel="stylesheet" href="build/index.css" /> -->
+  <link rel="stylesheet" href="http://localhost:8080/index.css" />
 
   <body>
-    <div id="giphy"></div>
-    <a href="https://medium.com/immersion-for-the-win">For now, there's just a blog</a>
 
-    <script type="text/javascript">
-      // Kids: Don't do this at home! (Only old men are allowed to write javascript this crude)
-      var request = new XMLHttpRequest();
-      request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=virtual+reality', true);
-      request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-          var response = JSON.parse(request.responseText);
-          console.log(response);
-          document.getElementById('giphy').innerHTML = '<img src="' + response.data.fixed_height_downsampled_url + '" width="' + response.data.fixed_height_downsampled_width + '" height="' + response.data.fixed_height_downsampled_height + '">';
-        }
-      };
-      request.send();
-    </script>
+    <section id="section-intro">
+      <h1>Immersion FTW</h1>
+      <h3>VR, AR and 360 development by Casper Fabricius - available for hire.</h3>
+
+      <h2>I build virtual reality solutions running in the browser and natively on mobile and desktop.</h2>
+
+      <div class="buzzwords">WebVR - A-Frame - Google Cardboard - iOS - Android - Unity - Gear VR - Oculus Rift - HTC Vive</div>
+    </section>
+
+    <section id="section-portfolio">
+      <h2><a href="http://vrlab.dk">VR:LAB - A interactive virtual reality web site for Google Cardboard and desktop</a></h2>
+      <!-- TODO
+      Screenshot: Directors with an active description (stereo mode?)
+      Screenshot: Movie playing on Android
+      -->
+      <div class="buzzwords">Technology: A-Frame, WebVR, Javascript, React, Redux</div>
+    </section>
+
+    <section id="section-blog">
+      <h2>Latest from the blog</h2>
+      <script async src="https://static.medium.com/embed.js"></script><a class="m-collection" href="https://medium.com/immersion-for-the-win">Immersion For The Win</a>
+    </section>
+
+    <section id="section-about">
+      <h2>About Casper Fabricius</h2>
+      <blockquote>I am a full stack web developer obsessed with the opportunities of virtual reality and related technologies. I have 16 years of experience with professional web development, my most recent 5 years with Podio as a developer, engineering manager and agile coach. I consider myself an expert in browser-based virtual reality solutions, and my extensive C# experience makes Unity my obvious choice for more advanced and demanding VR projects.</blockquote>
+      <p><a href="https://www.linkedin.com/in/casper">Find more details on my LinkedIn profile</a></p>
+    </section>
+
+    <section id="section-contact">
+      <h2>Get in touch - I'm available for hire</h2>
+      <ul>
+        <li><a href="mailto:immersion@casperfabricius.com">immersion@casperfabricius.com</a></li>
+        <li>+45 40 50 84 09</li>
+        <li>CVR no: 31640776</li>
+      </ul>
+    </section>
+
   </body>
 </html>
