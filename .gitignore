@@ -1,7 +1,4 @@
-node_modules/
-npm-debug.log
-*.sw[ponm]
-gh-pages
 build
-src/assets
-twistd.pid
+.sass-cache
+.jekyll-metadata
+node_modules
