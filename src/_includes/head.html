@@ -8,4 +8,20 @@
 
   <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@fabricius">
+  <meta name="twitter:title" content="{{ site.title | escape }}">
+  <meta name="twitter:description" content="{{ site.description | escape }}">
+  <meta name="twitter:creator" content="@fabricius">
+  <meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}/images/casper_open_mouth.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ site.title | escape }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{site.url}}" />
+  <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/images/casper_open_mouth.jpg" />
+  <meta property="og:description" content="{{ site.description | escape }}" />
+  <meta property="og:site_name" content="{{ site.title | escape }}" />
 </head>
