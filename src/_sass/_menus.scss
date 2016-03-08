@@ -1,12 +1,23 @@
 header {
-  .menu {
-    overflow: hidden;
-    float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+
+  .logo {
+    display: flex;
+  }
+
+  ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
     li {
       list-style: none;
       float: left;
-      margin-left: 20px;
+      margin-left: 50px;
+      text-transform: uppercase;
     }
   }
 }

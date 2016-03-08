@@ -3,12 +3,20 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
 h1 {
-  font-size: 5rem;
-  text-align: center;
+  font-size: 3rem;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #3C7BDA;
 }
 
 .cf:after {

@@ -1,10 +1,33 @@
+#section-intro {
+  background: url('../images/woman_gear_vr_red_tint.jpg') bottom center no-repeat;
+  height: 500px;
+  color: #fff;
+  position: relative;
+
+  article {
+    position: absolute;
+    width: 500px;
+    left: 50px;
+    bottom: 50px;
+  }
+
+  h1 {
+    font-style: italic;
+  }
+
+  .by-line {
+    font-size: 1.2rem;
+  }
+
+  .buzzwords {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+}
+
 #section-blog {
   .embed {
     min-width: 400px;
     min-height: 500px;
   }
-}
-
-.buzzwords {
-  font-style: italic;
 }
