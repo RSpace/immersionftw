@@ -1,4 +1,6 @@
 #section-intro {
+  @extend %box-shadow;
+
   background: url('../images/woman_gear_vr_red_tint.jpg') bottom center no-repeat;
   height: 500px;
   color: #fff;
@@ -30,4 +32,8 @@
     min-width: 400px;
     min-height: 500px;
   }
+}
+
+section.grey-bg {
+  background-color: #F5F5F5;
 }
