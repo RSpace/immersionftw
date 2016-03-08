@@ -1,0 +1,12 @@
+header {
+  .menu {
+    overflow: hidden;
+    float: right;
+
+    li {
+      list-style: none;
+      float: left;
+      margin-left: 20px;
+    }
+  }
+}
