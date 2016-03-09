@@ -1,10 +1,22 @@
-#section-intro {
-  @extend %box-shadow;
+$section-intro-height: 500px;
 
-  background: url('../images/woman_gear_vr_red_tint.jpg') bottom center no-repeat;
-  height: 500px;
-  color: #fff;
-  position: relative;
+.section-heading {
+  color: #FD5845;
+
+  h4 {
+    text-transform: uppercase;
+  }
+}
+
+#section-intro {
+  .inner {
+    @extend %box-shadow;
+
+    background: url('../images/woman_gear_vr_red_tint.jpg') bottom center no-repeat;
+    height: $section-intro-height;
+    color: #fff;
+    position: relative;
+  }
 
   article {
     position: absolute;
@@ -25,6 +37,44 @@
     font-size: 0.9rem;
     color: #ddd;
   }
+}
+
+#section-casestudy {
+  margin-top: ($section-intro-height/2)*-1;
+  padding-top: ($section-intro-height/2) + 150px;
+
+  h2 {
+    width: 80%;
+  }
+
+  article {
+    padding-right: 50px;
+  }
+
+  .col:last-child {
+    width: 505px;
+  }
+
+  .animate-on-hover {
+    @extend %box-shadow;
+
+    height: 281px;
+
+    &:hover {
+      .animated {
+        display: inline;
+      }
+
+      .still {
+        display: none;
+      }
+    }
+
+    .animated {
+      display: none;
+    }
+  }
+
 }
 
 #section-blog {

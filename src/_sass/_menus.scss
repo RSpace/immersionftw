@@ -1,23 +1,28 @@
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 200px;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
 
   .logo {
-    display: flex;
+    width: 50%;
+    padding-left: 50px;
   }
 
-  ul.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  .menu {
+    width: 50%;
+    text-align: right;
 
-    li {
-      list-style: none;
-      float: left;
-      margin-left: 50px;
-      text-transform: uppercase;
+    ul {
+      padding: 0;
+      display: inline-block;
+
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 50px;
+        text-transform: uppercase;
+      }
     }
   }
 }

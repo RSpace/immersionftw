@@ -12,11 +12,21 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 3rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
 a, a:active, a:visited {
   text-decoration: none;
   color: #3C7BDA;
+}
+
+p {
+  line-height: 2rem;
 }
 
 .cf:after {

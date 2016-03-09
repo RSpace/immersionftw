@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  header, section {
+  header, section .inner {
     width: 960px;
     margin: 0 auto;
   }
@@ -13,4 +13,13 @@
 
 %box-shadow {
   box-shadow: 5px 5px 5px #ccc;
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+
+  .col {
+    width: 50%;
+  }
 }
