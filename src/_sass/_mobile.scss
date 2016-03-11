@@ -1,0 +1,126 @@
+// Phone layout - optimized for 360px width
+@media screen and (max-width: 960px) {
+  section {
+    //width: auto;
+    //padding: 0 20px;
+  }
+
+  .cols {
+    display: flex;
+    flex-direction: column;
+
+    .col {
+      width: auto;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  header, section .inner {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  header .logo img, #section-contact img.logo {
+    width: 340px;
+    height: 62px;
+  }
+
+  header {
+    flex-direction: column;
+
+    .logo {
+      width: auto;
+      padding-left: 0;
+      margin: 20px auto;
+    }
+
+    .menu {
+      width: auto;
+
+      ul li {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  #section-intro {
+    margin-top: 30px;
+
+    article {
+      width: 320px;
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+
+  #section-casestudy {
+    .animate-on-hover {
+      width: 340px;
+      height: 191px;
+
+      img {
+        width: 340px;
+        height: 191px;
+      }
+    }
+
+    ul.quotes {
+
+      li {
+        width: 340px;
+      }
+
+      blockquote {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+      }
+
+      img {
+        display: none;
+      }
+
+    }
+
+  }
+
+  #section-blog .embed {
+    width: 100%;
+  }
+
+  #section-about {
+    h2 {
+      width: auto;
+    }
+
+    .col:first-child {
+      width: auto;
+    }
+    .col:last-child {
+      width: auto;
+    }
+
+    img {
+      width: 340px;
+    }
+  }
+
+  #section-contact {
+    padding-top: 200px;
+
+    h3 {
+      width: auto;
+    }
+  }
+}
+
+

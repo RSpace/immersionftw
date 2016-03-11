@@ -1,18 +1,7 @@
-@media screen and (min-width: 900px) {
-  header, section .inner {
-    width: 960px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  section {
-    padding: 0 20px;
-  }
-}
-
-%box-shadow {
-  box-shadow: 5px 5px 5px #ccc;
+// Desktop layout - optimized for 960px
+header, section .inner {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .cols {
@@ -22,4 +11,8 @@
   .col {
     width: 50%;
   }
+}
+
+%box-shadow {
+  box-shadow: 5px 5px 5px #ccc;
 }

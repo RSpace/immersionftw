@@ -14,7 +14,7 @@ $section-intro-height: 500px;
 
     background: url('../images/woman_gear_vr_red_tint.jpg') bottom center no-repeat;
     height: $section-intro-height;
-    color: #fff;
+    color: #eee;
     position: relative;
   }
 
@@ -36,6 +36,7 @@ $section-intro-height: 500px;
   .buzzwords {
     font-size: 0.9rem;
     color: #ddd;
+    margin-top: 20px;
   }
 }
 
