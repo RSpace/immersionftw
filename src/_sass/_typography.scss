@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body {
@@ -24,6 +24,12 @@ a, a:active, a:visited {
   text-decoration: none;
   color: #3C7BDA;
 }
+
+a.with-icon {
+  background: url('../images/link.png') left center no-repeat;
+  padding-left: 20px;
+}
+
 
 p {
   line-height: 2rem;
