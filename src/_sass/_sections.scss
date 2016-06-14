@@ -151,12 +151,16 @@ $section-customers-height: 400px;
 
 #section-blog {
   padding: 100px 0;
+  overflow: hidden;
 
   .embed {
     @extend %box-shadow;
 
-    width: 720px;
+    width: 450px;
     min-height: 500px;
+
+    float: left;
+    margin-right: 30px;
   }
 }
 
