@@ -138,9 +138,19 @@ $section-customers-height: 400px;
 
 }
 
-#section-blog {
+#section-talks {
   padding: 200px 0 100px 0;
   background-color: #fff;
+
+  ul {
+    li {
+      line-height: 3em;
+    }
+  }
+}
+
+#section-blog {
+  padding: 100px 0;
 
   .embed {
     @extend %box-shadow;
@@ -183,9 +193,8 @@ $section-customers-height: 400px;
   }
 
   h3 {
-    font-size: 1.8rem;
-    line-height: 3.5rem;
-    width: 55%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   ul {
