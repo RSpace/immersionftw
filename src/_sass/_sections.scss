@@ -1,4 +1,5 @@
 $section-intro-height: 500px;
+$section-customers-height: 400px;
 
 .section-heading {
   color: #FD5845;
@@ -40,9 +41,25 @@ $section-intro-height: 500px;
   }
 }
 
+#section-customers {
+  padding-top: 100px;
+
+  ul.customer-logos {
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    overflow: hidden;
+
+    li {
+      float: left;
+      list-style: none;
+      margin-left: 150px;
+    }
+  }
+}
+
 #section-casestudy {
-  margin-top: ($section-intro-height/2)*-1;
-  padding-top: ($section-intro-height/2) + 150px;
+  margin-top: (($section-intro-height+$section-customers-height)/2)*-1;
+  padding-top: (($section-intro-height+$section-customers-height)/2) + 100px;
   overflow: hidden;
   margin-bottom: -100px;
 
